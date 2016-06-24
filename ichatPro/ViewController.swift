@@ -9,20 +9,85 @@
 import UIKit
 import FBSDKLoginKit
 import FBSDKCoreKit
+import Firebase
 
 class ViewController: UIViewController {
 
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let loginButton: FBSDKLoginButton = FBSDKLoginButton()
-        loginButton.center = self.view.center
-        self.view!.addSubview(loginButton)
+       
+        
 
     }
-    
-   
-    
+  
+    @IBAction func FacebookButton(sender: AnyObject) {
+     
+        
+    let log = FBSDKLoginManager()
+        
+        log.logInWithReadPermissions(["email"]) { (result:FBSDKLoginManagerLoginResult!, Error:NSError!) in
+            
+            if Error != nil {
+                
+                print(Error)
+                
+            
+                
+            }
+            else {
+                
+           
+                
+            let c = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
+                
+                
+                FIRAuth.auth()?.signInWithCredential(c) { (user, error) in
+                    
+                    
+            
+                    
+                    if user != nil {
+                        
+                        print("SucessFull\(user)")
+                        
+                        print(user?.displayName)
+                        print(user?.email)
+                        print(user?.photoURL)
+                        print(user?.description)
+                    }
+                    
+                    else {
+                        
+                        print("ERRORRRRR")
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                }
+                
+                
+
+            
+             
+            }
+            
+            
+        }
+        
+     
+        
+        
+        
+    }
     
     
     
