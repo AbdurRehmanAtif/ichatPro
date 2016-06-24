@@ -13,6 +13,11 @@
 		0AC9CFF41D1D6D74000C600D /* ichatPro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9CFF21D1D6D74000C600D /* ichatPro.xcdatamodeld */; };
 		0AC9CFF61D1D6D74000C600D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9CFF51D1D6D74000C600D /* Assets.xcassets */; };
 		0AC9CFF91D1D6D74000C600D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9CFF71D1D6D74000C600D /* LaunchScreen.storyboard */; };
+		0AC9D0011D1D6D94000C600D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */; };
+		0AC9D0051D1D70EB000C600D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0031D1D70EB000C600D /* Bolts.framework */; };
+		0AC9D0061D1D70EB000C600D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */; };
+		0AC9D0081D1D70F7000C600D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */; };
+		7AC9916F4119F406AEED6049 /* Pods_ichatPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		0AC9CFF51D1D6D74000C600D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AC9CFF81D1D6D74000C600D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AC9CFFA1D1D6D74000C600D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0AC9D0031D1D70EB000C600D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichatPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB8389689AA936F30886564A /* Pods-ichatPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichatPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro.debug.xcconfig"; sourceTree = "<group>"; };
+		FB27CA53D96629686321E32D /* Pods-ichatPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichatPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AC9916F4119F406AEED6049 /* Pods_ichatPro.framework in Frameworks */,
+				0AC9D0081D1D70F7000C600D /* FBSDKCoreKit.framework in Frameworks */,
+				0AC9D0051D1D70EB000C600D /* Bolts.framework in Frameworks */,
+				0AC9D0061D1D70EB000C600D /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00AC87B312C77D4C759A19D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0AC9CFDF1D1D6D74000C600D = {
 			isa = PBXGroup;
 			children = (
 				0AC9CFEA1D1D6D74000C600D /* ichatPro */,
 				0AC9CFE91D1D6D74000C600D /* Products */,
+				9658315DDA598A2A4242EBA6 /* Pods */,
+				00AC87B312C77D4C759A19D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,8 @@
 		0AC9CFEA1D1D6D74000C600D /* ichatPro */ = {
 			isa = PBXGroup;
 			children = (
+				0AC9D0021D1D70A4000C600D /* FacebookFrameWork */,
+				0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */,
 				0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */,
 				0AC9CFED1D1D6D74000C600D /* ViewController.swift */,
 				0AC9CFEF1D1D6D74000C600D /* Main.storyboard */,
@@ -67,6 +95,25 @@
 			path = ichatPro;
 			sourceTree = "<group>";
 		};
+		0AC9D0021D1D70A4000C600D /* FacebookFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */,
+				0AC9D0031D1D70EB000C600D /* Bolts.framework */,
+				0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */,
+			);
+			name = FacebookFrameWork;
+			sourceTree = "<group>";
+		};
+		9658315DDA598A2A4242EBA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB8389689AA936F30886564A /* Pods-ichatPro.debug.xcconfig */,
+				FB27CA53D96629686321E32D /* Pods-ichatPro.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AC9CFFD1D1D6D74000C600D /* Build configuration list for PBXNativeTarget "ichatPro" */;
 			buildPhases = (
+				FB97198802768FE5FE2708B5 /* 📦 Check Pods Manifest.lock */,
 				0AC9CFE41D1D6D74000C600D /* Sources */,
 				0AC9CFE51D1D6D74000C600D /* Frameworks */,
 				0AC9CFE61D1D6D74000C600D /* Resources */,
+				F5757505D5C75793FFB218C1 /* 📦 Embed Pods Frameworks */,
+				F1369AEA0AEAB8C05DF62820 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,12 +177,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC9CFF91D1D6D74000C600D /* LaunchScreen.storyboard in Resources */,
+				0AC9D0011D1D6D94000C600D /* GoogleService-Info.plist in Resources */,
 				0AC9CFF61D1D6D74000C600D /* Assets.xcassets in Resources */,
 				0AC9CFF11D1D6D74000C600D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F1369AEA0AEAB8C05DF62820 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5757505D5C75793FFB218C1 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB97198802768FE5FE2708B5 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0AC9CFE41D1D6D74000C600D /* Sources */ = {
@@ -254,8 +353,13 @@
 		};
 		0AC9CFFE1D1D6D74000C600D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB8389689AA936F30886564A /* Pods-ichatPro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ichatPro",
+				);
 				INFOPLIST_FILE = ichatPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ioCodex.ichatPro;
@@ -265,8 +369,13 @@
 		};
 		0AC9CFFF1D1D6D74000C600D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB27CA53D96629686321E32D /* Pods-ichatPro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ichatPro",
+				);
 				INFOPLIST_FILE = ichatPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ioCodex.ichatPro;
@@ -293,6 +402,7 @@
 				0AC9CFFF1D1D6D74000C600D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

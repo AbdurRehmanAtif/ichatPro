@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>692113783437-1gup1o3p534l8iha9ndlmp0vottsm4kd.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.692113783437-1gup1o3p534l8iha9ndlmp0vottsm4kd</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDpYfmB4cw1sRxWf3ppYzNj2INADwwgzFc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>692113783437</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>ioCodex.ichatPro</string>
+	<key>PROJECT_ID</key>
+	<string>finalyearproject-fb77f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>finalyearproject-fb77f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:692113783437:ios:2cd416655511fe32</string>
+	<key>DATABASE_URL</key>
+	<string>https://finalyearproject-fb77f.firebaseio.com</string>
+</dict>
+</plist>
