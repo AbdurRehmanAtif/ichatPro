@@ -19,7 +19,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-       
+        FIRAuth.auth()?.addAuthStateDidChangeListener({ (auth:FIRAuth, user:FIRUser?) in
+        
+            if let user = user {
+                print(user)
+                
+              self.performSegueWithIdentifier("ab", sender: nil)
+              
+                
+            } else {
+                
+                print(auth)
+                print("Imrunning")
+          
+            }
+        
+            
+            
+       })
         
 
     }
@@ -34,6 +51,7 @@ class ViewController: UIViewController {
             if Error != nil {
                 
                 print(Error)
+                print("_______________________________")
                 
             
                 
@@ -54,10 +72,7 @@ class ViewController: UIViewController {
                         
                         print("SucessFull\(user)")
                         
-                        print(user?.displayName)
-                        print(user?.email)
-                        print(user?.photoURL)
-                        print(user?.description)
+                
                     }
                     
                     else {

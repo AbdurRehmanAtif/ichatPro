@@ -17,6 +17,7 @@
 		0AC9D0051D1D70EB000C600D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0031D1D70EB000C600D /* Bolts.framework */; };
 		0AC9D0061D1D70EB000C600D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */; };
 		0AC9D0081D1D70F7000C600D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */; };
+		0AC9D0151D1DD685000C600D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9D0141D1DD685000C600D /* HomeViewController.swift */; };
 		7AC9916F4119F406AEED6049 /* Pods_ichatPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		0AC9D0031D1D70EB000C600D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0AC9D0141D1DD685000C600D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichatPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8389689AA936F30886564A /* Pods-ichatPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichatPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro.debug.xcconfig"; sourceTree = "<group>"; };
 		FB27CA53D96629686321E32D /* Pods-ichatPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichatPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro.release.xcconfig"; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */,
 				0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */,
 				0AC9CFED1D1D6D74000C600D /* ViewController.swift */,
+				0AC9D0141D1DD685000C600D /* HomeViewController.swift */,
 				0AC9CFEF1D1D6D74000C600D /* Main.storyboard */,
 				0AC9CFF51D1D6D74000C600D /* Assets.xcassets */,
 				0AC9CFF71D1D6D74000C600D /* LaunchScreen.storyboard */,
@@ -241,6 +244,7 @@
 				0AC9CFEE1D1D6D74000C600D /* ViewController.swift in Sources */,
 				0AC9CFF41D1D6D74000C600D /* ichatPro.xcdatamodeld in Sources */,
 				0AC9CFEC1D1D6D74000C600D /* AppDelegate.swift in Sources */,
+				0AC9D0151D1DD685000C600D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
