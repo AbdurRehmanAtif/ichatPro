@@ -65,5 +65,9 @@
 	</array>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Monaco.ttf</string>
+	</array>
 </dict>
 </plist>

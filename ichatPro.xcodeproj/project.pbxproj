@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB3CEC81D1EDC920030CE6C /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB3CEC71D1EDC920030CE6C /* FacebookViewController.swift */; };
+		0AB3CED01D1F10610030CE6C /* LogOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB3CECF1D1F10610030CE6C /* LogOfViewController.swift */; };
 		0AC9CFEC1D1D6D74000C600D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */; };
 		0AC9CFEE1D1D6D74000C600D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9CFED1D1D6D74000C600D /* ViewController.swift */; };
 		0AC9CFF11D1D6D74000C600D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9CFEF1D1D6D74000C600D /* Main.storyboard */; };
@@ -17,11 +19,13 @@
 		0AC9D0051D1D70EB000C600D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0031D1D70EB000C600D /* Bolts.framework */; };
 		0AC9D0061D1D70EB000C600D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */; };
 		0AC9D0081D1D70F7000C600D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */; };
-		0AC9D0151D1DD685000C600D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9D0141D1DD685000C600D /* HomeViewController.swift */; };
+		0AC9D0421D1E0B24000C600D /* Monaco.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0AC9D0411D1E0B24000C600D /* Monaco.ttf */; };
 		7AC9916F4119F406AEED6049 /* Pods_ichatPro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AB3CEC71D1EDC920030CE6C /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
+		0AB3CECF1D1F10610030CE6C /* LogOfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOfViewController.swift; sourceTree = "<group>"; };
 		0AC9CFE81D1D6D74000C600D /* ichatPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ichatPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AC9CFED1D1D6D74000C600D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -34,7 +38,7 @@
 		0AC9D0031D1D70EB000C600D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		0AC9D0071D1D70F7000C600D /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		0AC9D0141D1DD685000C600D /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0AC9D0411D1E0B24000C600D /* Monaco.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Monaco.ttf; sourceTree = "<group>"; };
 		4032BF14ECCE7C767AA2AC2B /* Pods_ichatPro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ichatPro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB8389689AA936F30886564A /* Pods-ichatPro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichatPro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro.debug.xcconfig"; sourceTree = "<group>"; };
 		FB27CA53D96629686321E32D /* Pods-ichatPro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ichatPro.release.xcconfig"; path = "Pods/Target Support Files/Pods-ichatPro/Pods-ichatPro.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +67,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0AB3CEC21D1ED83B0030CE6C /* LoginSystem */ = {
+			isa = PBXGroup;
+			children = (
+				0AB3CEC71D1EDC920030CE6C /* FacebookViewController.swift */,
+				0AB3CECF1D1F10610030CE6C /* LogOfViewController.swift */,
+			);
+			name = LoginSystem;
+			sourceTree = "<group>";
+		};
 		0AC9CFDF1D1D6D74000C600D = {
 			isa = PBXGroup;
 			children = (
@@ -85,15 +98,17 @@
 			isa = PBXGroup;
 			children = (
 				0AC9D0021D1D70A4000C600D /* FacebookFrameWork */,
-				0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */,
+				0AC9D0431D1E0E93000C600D /* Foonts */,
+				0AC9D0441D1E0EBE000C600D /* Animation */,
+				0AB3CEC21D1ED83B0030CE6C /* LoginSystem */,
 				0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */,
 				0AC9CFED1D1D6D74000C600D /* ViewController.swift */,
-				0AC9D0141D1DD685000C600D /* HomeViewController.swift */,
 				0AC9CFEF1D1D6D74000C600D /* Main.storyboard */,
-				0AC9CFF51D1D6D74000C600D /* Assets.xcassets */,
 				0AC9CFF71D1D6D74000C600D /* LaunchScreen.storyboard */,
 				0AC9CFFA1D1D6D74000C600D /* Info.plist */,
+				0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */,
 				0AC9CFF21D1D6D74000C600D /* ichatPro.xcdatamodeld */,
+				0AC9CFF51D1D6D74000C600D /* Assets.xcassets */,
 			);
 			path = ichatPro;
 			sourceTree = "<group>";
@@ -106,6 +121,21 @@
 				0AC9D0041D1D70EB000C600D /* FBSDKLoginKit.framework */,
 			);
 			name = FacebookFrameWork;
+			sourceTree = "<group>";
+		};
+		0AC9D0431D1E0E93000C600D /* Foonts */ = {
+			isa = PBXGroup;
+			children = (
+				0AC9D0411D1E0B24000C600D /* Monaco.ttf */,
+			);
+			name = Foonts;
+			sourceTree = "<group>";
+		};
+		0AC9D0441D1E0EBE000C600D /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 		9658315DDA598A2A4242EBA6 /* Pods */ = {
@@ -179,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC9D0421D1E0B24000C600D /* Monaco.ttf in Resources */,
 				0AC9CFF91D1D6D74000C600D /* LaunchScreen.storyboard in Resources */,
 				0AC9D0011D1D6D94000C600D /* GoogleService-Info.plist in Resources */,
 				0AC9CFF61D1D6D74000C600D /* Assets.xcassets in Resources */,
@@ -242,9 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AC9CFEE1D1D6D74000C600D /* ViewController.swift in Sources */,
+				0AB3CEC81D1EDC920030CE6C /* FacebookViewController.swift in Sources */,
 				0AC9CFF41D1D6D74000C600D /* ichatPro.xcdatamodeld in Sources */,
+				0AB3CED01D1F10610030CE6C /* LogOfViewController.swift in Sources */,
 				0AC9CFEC1D1D6D74000C600D /* AppDelegate.swift in Sources */,
-				0AC9D0151D1DD685000C600D /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

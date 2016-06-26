@@ -18,100 +18,54 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        FIRAuth.auth()?.addAuthStateDidChangeListener({ (auth:FIRAuth, user:FIRUser?) in
         
-            if let user = user {
-                print(user)
+        FIRAuth.auth()?.addAuthStateDidChangeListener { auth, user in
+            if user != nil {
                 
-              self.performSegueWithIdentifier("ab", sender: nil)
-              
+                print("wapis yay chalta ha")
+                 self.currentUser()
+    
                 
             } else {
                 
-                print(auth)
-                print("Imrunning")
-          
+                print("not sign in")
             }
-        
-            
-            
-       })
-        
-
-    }
-  
-    @IBAction func FacebookButton(sender: AnyObject) {
-     
-        
-    let log = FBSDKLoginManager()
-        
-        log.logInWithReadPermissions(["email"]) { (result:FBSDKLoginManagerLoginResult!, Error:NSError!) in
-            
-            if Error != nil {
-                
-                print(Error)
-                print("_______________________________")
-                
-            
-                
-            }
-            else {
-                
-           
-                
-            let c = FIRFacebookAuthProvider.credentialWithAccessToken(FBSDKAccessToken.currentAccessToken().tokenString)
-                
-                
-                FIRAuth.auth()?.signInWithCredential(c) { (user, error) in
-                    
-                    
-            
-                    
-                    if user != nil {
-                        
-                        print("SucessFull\(user)")
-                        
-                
-                    }
-                    
-                    else {
-                        
-                        print("ERRORRRRR")
-                    }
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                }
-                
-                
-
-            
-             
-            }
-            
-            
         }
         
-     
+
         
+    }
+
+
+    func currentUser(){
         
+        if let user = FIRAuth.auth()?.currentUser {
+            
+            let name:String! = user.displayName
+            
+            let email = user.email
+            let photoUrl = user.photoURL
+           
+            
+            // The user's ID, unique to the Firebase project.
+           // let data =  NSData(contentsOfURL: user.photoURL!)
+           // self.PicToWelcome.image = UIImage(data: data!)
+         
+           print("____________")
+            print(name)
+            print("phr yay be")
+            print(email)
+            print(photoUrl)
+            print("____________")
+            self.performSegueWithIdentifier("HomeDirect", sender: nil)
+            
+        } else {
+            
+            // No user is signed in.
+        }
         
     }
     
-    
-    
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 
 }
