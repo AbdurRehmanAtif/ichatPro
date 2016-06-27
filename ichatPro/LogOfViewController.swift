@@ -21,6 +21,10 @@ class LogOfViewController: UIViewController {
         try! FIRAuth.auth()!.signOut()
      FBSDKAccessToken.setCurrentAccessToken(nil)
         
+        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "Name")
+        NSUserDefaults.standardUserDefaults().setValue(nil, forKey: "pic")
+
+        
     }
     
     

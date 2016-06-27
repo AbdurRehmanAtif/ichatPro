@@ -10,6 +10,7 @@
 import FBSDKLoginKit
 import Firebase
 import UIKit
+import FirebaseStorage
 
 
 class FacebookViewController: UIViewController {
@@ -48,8 +49,12 @@ class FacebookViewController: UIViewController {
                         }
                         else {
                             
+                             NSUserDefaults.standardUserDefaults().setValue(self.UserNmaeInput.text, forKey: "Name")
+                            let storyb:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                             
-                        self.performSegueWithIdentifier("Cheal", sender: nil)
+                            let Welcome:UIViewController = storyb.instantiateViewControllerWithIdentifier("welcome1")
+                            
+                            self.presentViewController(Welcome, animated: true, completion: nil)
                                 
                            
                             
@@ -106,12 +111,116 @@ class FacebookViewController: UIViewController {
                     
                     
                     if user != nil {
+                    
+                     NSUserDefaults.standardUserDefaults().setValue(user?.displayName, forKey: "Name")
                         
-                   
-                    
-                       
-                    self.performSegueWithIdentifier("Cheal", sender: nil)
-                    
+                        NSUserDefaults.standardUserDefaults().setURL(user?.photoURL, forKey: "pic")
+                        
+                        
+                        
+                        let storage = FIRStorage.storage()
+                        let storageRef = storage.referenceForURL("gs://finalyearproject-fb77f.appspot.com")
+                        
+                        
+                        let request = FBSDKGraphRequest(graphPath: "me/picture", parameters:["height":300 , "width" :300 ,"redirect":false], HTTPMethod: "GET")
+                        request.startWithCompletionHandler({(connection, result, error) -> Void in
+                            
+                            if error != nil {
+                                
+                                
+                        
+                            }
+                            
+                            else {
+                                
+                                let temp = result as? JSONDictionary
+                                let data = temp!["data"] as? JSONDictionary
+                                let picFinalUrl = data!["url"] as? String
+                                if let picFormate:NSData = NSData(contentsOfURL: NSURL(string: picFinalUrl!)!)!{
+                                    
+                                    let storage = storageRef.child("\(user!.uid)/ProfilePic.jpg")
+                                    
+                                    storage.putData(picFormate,metadata: nil){
+                                        
+                                        metadata , error in
+                                        
+                                        if error != nil {
+                                            
+                                            print("PIC UPLOAD ERROR")
+                                        }
+                                        else{
+                                    
+                                            let storage = FIRStorage.storage()
+                                            let storageRef = storage.referenceForURL("gs://finalyearproject-fb77f.appspot.com")
+                                            let Storage = storageRef.child("\(user!.uid)/ProfilePic.jpg")
+                                            
+                                            Storage.dataWithMaxSize(1 * 1024 * 1024) { (data, error) -> Void in
+                                                if (error != nil) {
+                                                    // Uh-oh, an error occurred!
+                                                } else {
+                                                    // Data for "images/island.jpg" is returned
+                                               
+                                                    
+                                                    print("Data after Download")
+                                                    
+                                                    let url:NSData = data!
+                                                    
+                                                    print(url)
+                                                    let y = url
+                                                  
+                                                    
+                                                    if y == url {
+                                                        
+                                                        NSUserDefaults.standardUserDefaults().setValue(url, forKey: "wah")
+                                                        let storyb:UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                                        
+                                                        let Welcome:UIViewController = storyb.instantiateViewControllerWithIdentifier("welcome1")
+                                                        
+                                                        self.presentViewController(Welcome, animated: true, completion: nil)
+                                                    }
+                                                    else{
+                                                        
+                                                        print("Waite ker raha hwn ab")
+                                                    }
+                                                  
+                                                    
+                                                }
+                                            }
+                                            
+                                            
+                                            
+                                        
+
+                                            
+                                            
+                                        }
+                                    }
+                                    
+                                    
+                                    
+                                }
+                                else{
+                                    
+                                    // agr na howi upload
+                                }
+                                
+                                
+                                
+                               
+                                
+                            }
+                            
+                            
+                            
+                            
+                        })
+
+                        
+                        
+                        
+            
+                        
+           
                     }
                         
                     else {

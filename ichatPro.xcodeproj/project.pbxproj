@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB05C061D202D1200961B78 /* WelcomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB05C051D202D1200961B78 /* WelcomeScreen.swift */; };
+		0AB05C0A1D2036B100961B78 /* wELCOMEsCREENsecond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB05C091D2036B100961B78 /* wELCOMEsCREENsecond.swift */; };
+		0AB05C0C1D2065FF00961B78 /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB05C0B1D2065FF00961B78 /* Sources.swift */; };
 		0AB3CEC81D1EDC920030CE6C /* FacebookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB3CEC71D1EDC920030CE6C /* FacebookViewController.swift */; };
 		0AB3CED01D1F10610030CE6C /* LogOfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB3CECF1D1F10610030CE6C /* LogOfViewController.swift */; };
 		0AC9CFEC1D1D6D74000C600D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */; };
@@ -24,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AB05C051D202D1200961B78 /* WelcomeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeScreen.swift; sourceTree = "<group>"; };
+		0AB05C091D2036B100961B78 /* wELCOMEsCREENsecond.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = wELCOMEsCREENsecond.swift; sourceTree = "<group>"; };
+		0AB05C0B1D2065FF00961B78 /* Sources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
 		0AB3CEC71D1EDC920030CE6C /* FacebookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookViewController.swift; sourceTree = "<group>"; };
 		0AB3CECF1D1F10610030CE6C /* LogOfViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogOfViewController.swift; sourceTree = "<group>"; };
 		0AC9CFE81D1D6D74000C600D /* ichatPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ichatPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +78,8 @@
 			children = (
 				0AB3CEC71D1EDC920030CE6C /* FacebookViewController.swift */,
 				0AB3CECF1D1F10610030CE6C /* LogOfViewController.swift */,
+				0AB05C051D202D1200961B78 /* WelcomeScreen.swift */,
+				0AB05C091D2036B100961B78 /* wELCOMEsCREENsecond.swift */,
 			);
 			name = LoginSystem;
 			sourceTree = "<group>";
@@ -101,10 +109,10 @@
 				0AC9D0431D1E0E93000C600D /* Foonts */,
 				0AC9D0441D1E0EBE000C600D /* Animation */,
 				0AB3CEC21D1ED83B0030CE6C /* LoginSystem */,
-				0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */,
 				0AC9CFED1D1D6D74000C600D /* ViewController.swift */,
 				0AC9CFEF1D1D6D74000C600D /* Main.storyboard */,
 				0AC9CFF71D1D6D74000C600D /* LaunchScreen.storyboard */,
+				0AC9CFEB1D1D6D74000C600D /* AppDelegate.swift */,
 				0AC9CFFA1D1D6D74000C600D /* Info.plist */,
 				0AC9D0001D1D6D94000C600D /* GoogleService-Info.plist */,
 				0AC9CFF21D1D6D74000C600D /* ichatPro.xcdatamodeld */,
@@ -127,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				0AC9D0411D1E0B24000C600D /* Monaco.ttf */,
+				0AB05C0B1D2065FF00961B78 /* Sources.swift */,
 			);
 			name = Foonts;
 			sourceTree = "<group>";
@@ -272,8 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AB05C061D202D1200961B78 /* WelcomeScreen.swift in Sources */,
 				0AC9CFEE1D1D6D74000C600D /* ViewController.swift in Sources */,
 				0AB3CEC81D1EDC920030CE6C /* FacebookViewController.swift in Sources */,
+				0AB05C0A1D2036B100961B78 /* wELCOMEsCREENsecond.swift in Sources */,
+				0AB05C0C1D2065FF00961B78 /* Sources.swift in Sources */,
 				0AC9CFF41D1D6D74000C600D /* ichatPro.xcdatamodeld in Sources */,
 				0AB3CED01D1F10610030CE6C /* LogOfViewController.swift in Sources */,
 				0AC9CFEC1D1D6D74000C600D /* AppDelegate.swift in Sources */,

@@ -23,7 +23,8 @@ class ViewController: UIViewController {
             if user != nil {
                 
                 print("wapis yay chalta ha")
-                 self.currentUser()
+           
+                self.performSegueWithIdentifier("HomeDirect", sender: nil)
     
                 
             } else {
@@ -37,36 +38,6 @@ class ViewController: UIViewController {
     }
 
 
-    func currentUser(){
-        
-        if let user = FIRAuth.auth()?.currentUser {
-            
-            let name:String! = user.displayName
-            
-            let email = user.email
-            let photoUrl = user.photoURL
-           
-            
-            // The user's ID, unique to the Firebase project.
-           // let data =  NSData(contentsOfURL: user.photoURL!)
-           // self.PicToWelcome.image = UIImage(data: data!)
-         
-           print("____________")
-            print(name)
-            print("phr yay be")
-            print(email)
-            print(photoUrl)
-            print("____________")
-            self.performSegueWithIdentifier("HomeDirect", sender: nil)
-            
-        } else {
-            
-            // No user is signed in.
-        }
-        
-    }
-    
-
-
+   
 }
 

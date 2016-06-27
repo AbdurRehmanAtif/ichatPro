@@ -64,9 +64,6 @@
                                         <fontDescription key="fontDescription" name="Monaco" family="Monaco" pointSize="15"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <state key="normal" title="Sign In"/>
-                                        <connections>
-                                            <segue destination="XuM-zU-fNE" kind="show" id="jZy-nz-QEy"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qS-Wv-SsH">
                                         <rect key="frame" x="94" y="490" width="195" height="30"/>
@@ -228,10 +225,10 @@
             </objects>
             <point key="canvasLocation" x="-502.5" y="-148.5"/>
         </scene>
-        <!--Welcome Screen-->
+        <!--EsCREE Nsecond-->
         <scene sceneID="Igb-WN-Oc3">
             <objects>
-                <viewController storyboardIdentifier="WelcomeScreen" id="XuM-zU-fNE" customClass="WelcomeScreen" customModule="ichatPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="welcome1" id="XuM-zU-fNE" customClass="wELCOMEsCREENsecond" customModule="ichatPro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dYy-gO-oPL"/>
                         <viewControllerLayoutGuide type="bottom" id="J1K-5S-2CB"/>
@@ -247,6 +244,16 @@
                                     <constraint firstAttribute="height" constant="41" id="FLO-uS-Vze"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Monaco" family="Monaco" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayv-ly-UdY">
+                                <rect key="frame" x="73" y="315" width="228" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="228" id="8wh-hE-Xzr"/>
+                                    <constraint firstAttribute="height" constant="50" id="vKB-I1-EOP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Monaco" family="Monaco" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -270,25 +277,23 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="1mF-Ap-R0u" kind="show" id="oNx-Fn-obI"/>
+                                    <segue destination="1mF-Ap-R0u" kind="show" id="fEo-qV-cJv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ayv-ly-UdY">
-                                <rect key="frame" x="73" y="315" width="228" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="228" id="8wh-hE-Xzr"/>
-                                    <constraint firstAttribute="height" constant="50" id="vKB-I1-EOP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Monaco" family="Monaco" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RetPuertaSolBlanco" translatesAutoresizingMaskIntoConstraints="NO" id="dXA-OD-OaC">
-                                <rect key="frame" x="69" y="116" width="237" height="170"/>
+                                <rect key="frame" x="119" y="127" width="136" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="5cP-Fy-bwn"/>
+                                    <constraint firstAttribute="width" constant="136" id="8xc-5v-YWW"/>
+                                    <constraint firstAttribute="height" constant="131" id="B7e-5u-rcA"/>
                                     <constraint firstAttribute="width" constant="237" id="Oay-Is-WCM"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5cP-Fy-bwn"/>
+                                        <exclude reference="Oay-Is-WCM"/>
+                                    </mask>
+                                </variation>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -298,14 +303,20 @@
                             <constraint firstItem="8dP-HE-FyU" firstAttribute="centerX" secondItem="CZv-dZ-2eD" secondAttribute="centerX" id="BOK-sj-95D"/>
                             <constraint firstItem="LcX-WG-OSr" firstAttribute="top" secondItem="Ayv-ly-UdY" secondAttribute="bottom" constant="87" id="Hsm-sx-mlu"/>
                             <constraint firstItem="Ayv-ly-UdY" firstAttribute="top" secondItem="dXA-OD-OaC" secondAttribute="bottom" constant="29" id="Rp4-0q-fPv"/>
+                            <constraint firstItem="Ayv-ly-UdY" firstAttribute="top" secondItem="dXA-OD-OaC" secondAttribute="bottom" constant="57" id="SYG-CW-feJ"/>
+                            <constraint firstItem="dXA-OD-OaC" firstAttribute="top" secondItem="8dP-HE-FyU" secondAttribute="bottom" constant="46" id="UlE-wS-3G4"/>
                             <constraint firstItem="8dP-HE-FyU" firstAttribute="top" secondItem="dYy-gO-oPL" secondAttribute="bottom" constant="20" id="VKU-4v-SCE"/>
                             <constraint firstItem="Ayv-ly-UdY" firstAttribute="centerX" secondItem="CZv-dZ-2eD" secondAttribute="centerX" id="Z0t-2H-2Vd"/>
                             <constraint firstItem="LcX-WG-OSr" firstAttribute="centerX" secondItem="CZv-dZ-2eD" secondAttribute="centerX" id="bMV-Q2-40o"/>
+                            <constraint firstItem="dXA-OD-OaC" firstAttribute="centerX" secondItem="CZv-dZ-2eD" secondAttribute="centerX" id="hjm-ZQ-Kfo"/>
                             <constraint firstItem="LcX-WG-OSr" firstAttribute="centerX" secondItem="CZv-dZ-2eD" secondAttribute="centerX" id="pxp-Fn-9dl"/>
                             <constraint firstItem="dXA-OD-OaC" firstAttribute="top" secondItem="8dP-HE-FyU" secondAttribute="bottom" constant="35" id="rSZ-aH-2GR"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="2Jg-sm-51r"/>
+                                <exclude reference="rSZ-aH-2GR"/>
+                                <exclude reference="Rp4-0q-fPv"/>
                                 <exclude reference="bMV-Q2-40o"/>
                                 <exclude reference="BEe-QA-xQb"/>
                             </mask>
@@ -313,15 +324,13 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="Label" destination="Ayv-ly-UdY" id="wUS-lj-qVo"/>
-                        <outlet property="LabelText" destination="Ayv-ly-UdY" id="bcv-Cw-3Bf"/>
-                        <outlet property="Pic" destination="dXA-OD-OaC" id="wNJ-vI-Jjp"/>
-                        <outlet property="PicToWelcome" destination="dXA-OD-OaC" id="4TM-zp-3rW"/>
+                        <outlet property="NameLabel" destination="Ayv-ly-UdY" id="1sP-d2-eUp"/>
+                        <outlet property="Picture" destination="dXA-OD-OaC" id="SNa-bc-DMk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eiv-OC-hfb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-622.5" y="606.5"/>
+            <point key="canvasLocation" x="-733.5" y="598.5"/>
         </scene>
         <!--Facebook View Controller-->
         <scene sceneID="XvJ-4v-HM4">
@@ -459,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yLe-bC-a2j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1110.5" y="613.5"/>
+            <point key="canvasLocation" x="-1277.5" y="671.5"/>
         </scene>
     </scenes>
     <resources>
@@ -467,7 +476,6 @@
         <image name="pZzc4" width="492" height="108"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ol0-vj-86X"/>
-        <segue reference="oNx-Fn-obI"/>
+        <segue reference="fEo-qV-cJv"/>
     </inferredMetricsTieBreakers>
 </document>
